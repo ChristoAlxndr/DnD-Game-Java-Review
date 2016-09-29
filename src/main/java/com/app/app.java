@@ -1,6 +1,7 @@
 package com.app;
 
 import java.util.Scanner;
+import com.characters.*;
 
 public class app {
 
@@ -10,7 +11,15 @@ public class app {
 		
 		boolean userInputCorrect = false;
 		
+		HumanWizzard ourHumanWizzard = new HumanWizzard();
+		ourHumanWizzard = ourHumanWizzard.makeHumanWizard();
+		System.out.println(ourHumanWizzard.getHealth());
+		System.out.println(ourHumanWizzard.getWeapon());
+		System.out.println(ourHumanWizzard.getMagic());
+		System.out.println(ourHumanWizzard.getName());
 		
+		
+		System.out.println("\n\n\n");
 		System.out.println("Welcome to Silly D 'n' D\n\n");
 				
 		do{
